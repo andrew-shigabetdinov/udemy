@@ -1,28 +1,34 @@
+let string = 'some test string';
 
 // 1-е задание
-var numberOne = (Math.PI).toFixed(2);
-console.log(numberOne);
+var stringOne = string[0] + string[string.length-1];
+console.log(stringOne);
 
 // 2-е задание
-var numberTwo = Math.max(15, 11, 16, 12, 51, 12, 13, 51);
-console.log(numberTwo);
+var stringTwo = stringOne.toUpperCase();
+console.log(stringTwo);
 
-// 3-е задание (A)
-var numberThree = (Math.random()).toFixed(2);
-console.log(numberThree);
-
-// 3-е задание (B)
-
-var numberFour = Math.floor(Math.random() * 100 + 1);
-console.log(numberFour);
+// 3-е задание
+var stringThree = string.indexOf("string");
+console.log(stringThree);
 
 // 4-е задание
-
-var numberFive = (0.6*10 + 0.7*10)/10;
-console.log(numberFive);
+var stringFour = string.indexOf(" ", string.indexOf(" ")+1);
+console.log(stringFour);
 
 // 5-е задание
+var stringFive = string.slice(5, 5+4);
+console.log(stringFive);
 
-var stringSix = '100$';
-var numberSix = parseInt(stringSix);
-console.log(numberSix);
+// 6-е задание
+var stringSix = string.slice(5, 9);
+console.log(stringSix);
+
+// 7-е задание
+var stringSeven = string.slice(0, -6);
+console.log(stringSeven);
+
+// 8-е задание
+var a=20, b=16;
+var stringEight = String(a) + String(b);
+console.log(stringEight);
